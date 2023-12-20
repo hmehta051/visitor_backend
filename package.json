@@ -5,12 +5,14 @@
   "main": "index.js",
   "scripts": {
     "server": "nodemon src/server",
-    "start": "node src/server"
+    "start": "node src/server",
+    "test": "mocha ./src/tests/*.spec.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "chai-http": "^4.4.0",
     "cors": "^2.8.5",
     "dotenv": "^10.0.0",
     "express": "^4.17.2",
@@ -20,6 +22,8 @@
     "multer": "^1.4.5-lts.1"
   },
   "devDependencies": {
+    "chai": "^4.3.10",
+    "mocha": "^10.2.0",
     "nodemon": "^3.0.2"
   }
 }

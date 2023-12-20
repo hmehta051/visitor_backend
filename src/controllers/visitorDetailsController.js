@@ -10,7 +10,6 @@ const verifyToken = require("../middlewares/authorize");
 // Function to send SMS notification using Twilio
 function sendNotificationSMS(recipientNumber, message) {
   console.log(recipientNumber, message);
-  
 }
 
 router.post(
@@ -39,7 +38,6 @@ router.post(
         reason,
       });
 
-      
       const staff = await StaffModel.findById(staff_member_id);
       if (staff) {
         //function to send SMS notifications
